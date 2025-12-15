@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .mondrian {
+        display: grid;
+        grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+        grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+        height: 748px;
+        width: 748px;
+      }
+      .white {
+        background-color: #f0f1ec;
+      }
+      .red {
+        background-color: #e72f24;
+      }
+      .black {
+        background-color: #232629;
+      }
+      .blue {
+        background-color: #004592;
+      }
+      .yellow {
+        background-color: #f9d01e;
+      }
+      .gap {
+        background-color: #000;
+      }
+      .second {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .third {
+        grid-column: span 5;
+      }
+      .fourth {
+        grid-column: span 7;
+      }
+      .fifth,
+      .sixth,
+      .eleventh {
+        grid-row: span 3;
+      }
+      .seventh {
+        grid-area: 3 / 3 / 6 / 6;
+      }
+      .eighth {
+        grid-row: span 5;
+      }
+      .twelfth {
+        grid-column: span 5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="mondrian">
+      <div class="first red"></div>
+      <div class="second gap"></div>
+      <div class="third white"></div>
+      <div class="fourth gap"></div>
+      <div class="fifth white"></div>
+      <div class="sixth gap"></div>
+      <div class="seventh white"></div>
+      <div class="eighth gap"></div>
+      <div class="ninth blue"></div>
+      <div class="tenth gap"></div>
+      <div class="eleventh white"></div>
+      <div class="twelfth gap"></div>
+      <div class="thirteenth white"></div>
+      <div class="fourteenth gap"></div>
+      <div class="fifteenth yellow"></div>
+      <div class="sixteenth gap"></div>
+      <div class="seventeenth blue"></div>
+    </div>
+  </body>
+</html>
